@@ -1,0 +1,142 @@
+﻿html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*
+    ==================================
+    common classes
+    ==================================
+*/
+.middle {
+    position: relative;
+    margin: 0 auto;
+}
+
+.container {
+    margin-top: 1rem;
+    box-shadow: 0 1px 10px #333;
+    padding: 1rem;
+}
+
+.a4 {
+    width: 21cm;
+}
+
+/*
+    ==================================
+    profile picture
+    ==================================
+*/
+.hexagon {
+    margin-top: 80px;
+    width: 80px;
+    height: 46.19px;
+    background-image: url(../img/reza-ghorbani.jpg);
+    background-size: auto 92.3760px;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.hexTop,
+.hexBottom {
+    position: absolute;
+    z-index: 1;
+    width: 56.57px;
+    height: 56.57px;
+    overflow: hidden;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background: inherit;
+    left: 11.72px;
+    border-radius: inherit;
+}
+
+/*counter transform the bg image on the caps*/
+.hexTop:after,
+.hexBottom:after {
+    content: "";
+    position: absolute;
+    width: 80.0000px;
+    height: 46.188021535170066px;
+    -webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-23.0940px);
+    -ms-transform: rotate(45deg) scaleY(1.7321) translateY(-23.0940px);
+    transform: rotate(45deg) scaleY(1.7321) translateY(-23.0940px);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    background: inherit;
+    border-radius: inherit;
+}
+
+.hexTop {
+    top: -28.2843px;
+}
+
+.hexTop:after {
+    background-position: center top;
+}
+
+.hexBottom {
+    bottom: -28.2843px;
+}
+
+.hexBottom:after {
+    background-position: center bottom;
+}
+
+.hexagon:after {
+    content: "";
+    position: absolute;
+    top: 0.0000px;
+    left: 0;
+    width: 80.0000px;
+    height: 46.1880px;
+    z-index: 2;
+    background: inherit;
+    border-radius: inherit;
+}
