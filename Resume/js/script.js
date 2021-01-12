@@ -9,6 +9,22 @@
     /////////////////////
 
     //====================//
+    //  add hexagon rate to skills
+    //====================//
+    var _initSkills = function () {
+        $('ul.skills').children().each(function (_i, e) {
+            var $li = $(e),
+                rate = $li.data('rate');
+
+            for (var i = 0; rate && i < 5; i++)
+                if (i < rate)
+                    $li.prepend('<i class="hexagon"></i>');
+                else $li.prepend('<i class="hexagon b-lightgrey"></i>');
+        });
+    };
+    ////////////////////////
+
+    //====================//
     //  init hexagon svg
     //====================//
     var _initSvg = function () {
@@ -21,7 +37,8 @@
     //  init Page
     //=============//
     var _init = function () {
-        Page.svg('.hexagon');
+        _initSkills();
+        _initSvg();
     };
     /////////////////
 
