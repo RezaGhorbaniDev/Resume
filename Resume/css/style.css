@@ -452,23 +452,23 @@ small {
 */
 .achievement {
     clear: both;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
-.education svg,
 .achievement svg {
     width: 45px;
     height: 45px;
-}
-
-.education svg {
-    float: left;
-    margin-right: 20px;
 }
 
 .achievement svg,
 .achievement img {
     float: right;
     margin-left: 20px;
+}
+.content-right .achievement svg,
+.content-right .achievement img {
+    float: left;
+    margin-right: 20px;
+    margin-left: 0;
 }
 
 .achievement img {
@@ -479,8 +479,7 @@ small {
     fill: #78909C
 }
 
-.achievement h4,
-.education h4 {
+.achievement h4{
     margin-bottom: 6px;
 }
 /*
