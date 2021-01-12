@@ -250,14 +250,15 @@ small {
 .line {
     position: absolute;
     top: 0;
-    width: 4px;
-    background-color: #263238;
+    /*border-left: 4px dashed #263238;*/
     margin: 0 auto;
     left: 0;
     right: 0;
     height: 100%;
-    border-radius: 4px;
+    width: 4px;
+    background-color: #263238;
 }
+
 
 .content {
     width: 50%;
@@ -286,47 +287,35 @@ small {
     ==================================
 */
 .time-line .section > .hexagon {
+    width: 20px;
+    height: 20px;
     position: relative;
-    width: 34px;
-    height: 19.63px;
-    background-color: #263238;
-    top:7px;
+    left: -10px;
+    top: 7px;
 }
 
-.content-right .section > .hexagon{
-    right: 17px;
-}
-
-.content-left .section > .hexagon {
-    left: 17px;
-}
-
-
-.time-line .section > .hexagon:before,
-.time-line .section > .hexagon:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    border-left: 17px solid transparent;
-    border-right: 17px solid transparent;
-}
-
-.time-line .section > .hexagon:before {
-    bottom: 100%;
-    border-bottom: 9.81px solid #263238;
+.time-line .content-left .section > .hexagon {
+    left: 10px;
 }
 
 .time-line .section > .hexagon:after {
-    top: 100%;
-    width: 0;
-    border-top: 9.81px solid #263238;
-}
-.time-line .section > .hexagon .mi {
+    content: '';
     position: absolute;
-    color: #FAFAFA;
-    top: 0;
+    width: 20px;
+    height: 40px;
+    background: #fff;
+    top: -10px;
+    left: 0px;
+    z-index: 1;
+    border-radius: 50%;
 }
 
+.time-line .section > .hexagon svg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
 /*
     ==================================
     section
@@ -335,10 +324,6 @@ small {
 .section {
     position: relative;
     margin-bottom: 70px;
-}
-
-.content-right .section:first-child {
-    margin-top: 10px;
 }
 
 .content-left .section:first-child {
@@ -350,44 +335,67 @@ small {
     position: absolute;
     color: #FAFAFA;
     top: 0;
+    line-height: 34px;
 }
 
 .content-left .header {
-    right: 0px;
-    /*border-radius: 30px 0 0 30px;*/
-    padding: 7px 14px 7px 16px;
+    right: 50px;
+    border-radius: 5px 0 0 5px;
+    padding: 0 14px 0 16px;
 }
 
 .content-right .header {
-    left: 0px;
-    /*border-radius: 0 30px 30px 0;*/
-    padding: 9px 16px 9px 14px;
+    left: 50px;
+    border-radius: 0 5px 5px 0;
+    padding: 0 16px 0 14px;
+}
+.content-left .header:before,
+.content-right .header:before {
+    content: '';
+    position: absolute;
+    background-color: #263238;
+    width: 24px;
+    height: 24px;
+    top: -0px;
+    transform: rotate(45deg);
+    transform-origin: 0 0;
+    border-radius: 0 5px;
+    z-index: -1;
+}
+.content-left .header:before {
+    right: -24px;
+}
+.content-right .header:before {
+    left: 0;
 }
 
 .body {
-    padding: 60px 0 0 35px;
+    padding: 40px 0 0 50px;
 }
 
 .content-left .body {
-    padding: 60px 35px 0 0;
+    padding: 40px 50px 0 0;
 }
 
 .work h4 {
     line-height: 25px;
 }
-.work i{
-    font-size:.8rem;
+
+.work i {
+    font-size: .8rem;
     font-style: italic;
 }
+
 .work i:last-child {
     float: right;
 }
 
-.work ul{
+.work ul {
     margin: 10px 0 30px;
-    font-size:.9rem;
+    font-size: .9rem;
     padding-left: 15px;
 }
+
 .work ul li::before {
     content: "\2022";
     font-weight: bold;
