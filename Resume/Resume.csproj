@@ -69,8 +69,9 @@
   <ItemGroup>
     <Content Include="css\style.css" />
     <Content Include="fonts\material\MaterialIcons-Regular.svg" />
-    <Content Include="img\duty_finished.png" />
     <Content Include="img\hexagon-white.png" />
+    <Content Include="img\military.png" />
+    <Content Include="img\ub.svg" />
     <Content Include="img\reza-ghorbani.jpg" />
     <Content Include="img\codecup.svg" />
     <Content Include="index.html" />

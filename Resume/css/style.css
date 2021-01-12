@@ -447,19 +447,40 @@ small {
 
 /*
     ==================================
-    skills
+    certificate - education
     ==================================
 */
-.certificate svg {
-    float: right;
-    width: 40px;
+.achievement {
+    clear: both;
+    margin-bottom: 30px;
+}
+.education svg,
+.achievement svg {
+    width: 45px;
     height: 45px;
+}
+
+.education svg {
+    float: left;
+    margin-right: 20px;
+}
+
+.achievement svg,
+.achievement img {
+    float: right;
     margin-left: 20px;
 }
-.certificate svg path {
+
+.achievement img {
+    width: 45px;
+}
+
+.achievement svg path {
     fill: #78909C
 }
-.certificate h4{
+
+.achievement h4,
+.education h4 {
     margin-bottom: 6px;
 }
 /*
