@@ -193,7 +193,7 @@ body {
     ==================================
 */
 h1, h2, h3, h4, h5, h6,
-.speciallity, .header {
+.speciallity, .header, .ubuntu {
     font-family: ubuntu;
 }
 
@@ -392,7 +392,7 @@ small {
 
 .work ul {
     margin: 10px 0 30px;
-    font-size: .9rem;
+    font-size: .8rem;
     padding-left: 15px;
 }
 
