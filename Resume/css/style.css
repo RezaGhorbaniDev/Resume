@@ -236,6 +236,68 @@ small {
     font-size: .9em;
 }
 
+.contact {
+    font-size: .8rem;
+    margin-top: 30px;
+    font-weight: bold;
+    position: relative;
+    padding: 20px 0;
+}
+
+.contact > span svg {
+    width: 20px;
+    margin-left: 20px;
+    margin-right: 5px;
+    position: relative;
+    top: 7px;
+}
+
+.contact > span svg > path:last-child {
+    fill: #263238;
+}
+
+.contact > span:first-child svg {
+    margin-left: 0;
+}
+
+.contact a,
+.contact a:hover,
+.contact a:visited,
+.contact a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact:before,
+.contact:after {
+    content: '';
+    position: absolute;
+    width: 18%;
+    height: 3px;
+    background: #263238;
+    top: 0;
+    border-radius: 2px;
+}
+
+.contact:before {
+    left:27.5%
+}
+
+.contact:after {
+    right: 27.5%;
+}
+.contact .heart {
+    width: 30px;
+    height: 30px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: -14px;
+}
+.contact .heart > g {
+    fill: #263238;
+}
 /*
     ==================================
     time line
@@ -256,6 +318,7 @@ small {
     height: 100%;
     width: 4px;
     background-color: #263238;
+    border-radius: 2px;
 }
 
 
@@ -300,11 +363,11 @@ small {
 .time-line .section > .hexagon:after {
     content: '';
     position: absolute;
-    width: 25px;
+    width: 20px;
     height: 50px;
     background: #fff;
     top: -12.5px;
-    left: 0px;
+    left: 2.5px;
     z-index: 1;
     border-radius: 50%;
 }
@@ -454,6 +517,7 @@ small {
     clear: both;
     margin-bottom: 35px;
 }
+
 .achievement svg {
     width: 45px;
     height: 45px;
@@ -464,6 +528,7 @@ small {
     float: right;
     margin-left: 20px;
 }
+
 .content-right .achievement svg,
 .content-right .achievement img {
     float: left;
@@ -479,7 +544,7 @@ small {
     fill: #78909C
 }
 
-.achievement h4{
+.achievement h4 {
     margin-bottom: 6px;
 }
 /*
