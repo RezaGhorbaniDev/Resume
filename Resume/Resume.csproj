@@ -89,9 +89,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\Ubuntu_Regular.ttf" />
-    <Content Include="fonts\Ubuntu_Regular.woff" />
-    <Content Include="fonts\Ubuntu_Regular.woff2" />
     <Content Include="fonts\Roboto_Light.ttf" />
     <Content Include="fonts\Roboto_Light.woff" />
     <Content Include="fonts\Roboto_Light.woff2" />
@@ -103,6 +100,15 @@
     <Content Include="fonts\material\MaterialIcons-Regular.ttf" />
     <Content Include="fonts\material\MaterialIcons-Regular.woff" />
     <Content Include="fonts\material\MaterialIcons-Regular.woff2" />
+    <Content Include="fonts\ubuntu\Ubuntu-B.woff" />
+    <Content Include="fonts\ubuntu\Ubuntu-BI.woff" />
+    <Content Include="fonts\ubuntu\Ubuntu-C.woff" />
+    <Content Include="fonts\ubuntu\Ubuntu-L.woff" />
+    <Content Include="fonts\ubuntu\Ubuntu-LI.woff" />
+    <Content Include="fonts\ubuntu\Ubuntu-M.woff" />
+    <Content Include="fonts\ubuntu\Ubuntu-MI.woff" />
+    <Content Include="fonts\ubuntu\Ubuntu-R.woff" />
+    <Content Include="fonts\ubuntu\Ubuntu-RI.woff" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
