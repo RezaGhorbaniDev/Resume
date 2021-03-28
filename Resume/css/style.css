@@ -277,7 +277,11 @@ small {
 .contact a,
 .contact a:hover,
 .contact a:visited,
-.contact a:active {
+.contact a:active,
+.work a,
+.work a:hover,
+.work a:visited,
+.work a:active {
     text-decoration: none;
     color: inherit;
 }
