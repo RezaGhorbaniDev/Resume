@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\style.css" />
+    <Content Include="img\eco-tourism.png" />
     <Content Include="img\en.png" />
     <Content Include="img\fr.png" />
     <Content Include="img\heart.svg" />
@@ -77,6 +78,7 @@
     <Content Include="img\military.png" />
     <Content Include="img\phone.svg" />
     <Content Include="img\reza-ghorbani.jpg" />
+    <Content Include="img\singing.png" />
     <Content Include="img\ub.svg" />
     <Content Include="img\reza-ghorbani-old.jpg" />
     <Content Include="img\codecup.svg" />
