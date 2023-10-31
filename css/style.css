@@ -613,6 +613,7 @@ small {
   margin: 10px 0 30px;
   font-size: 0.8rem;
   padding-left: 15px;
+  color: #ccc;
 }
 .work ul li {
   text-align: start;
@@ -703,6 +704,10 @@ small {
 
 .achievement h4 {
   margin-bottom: 6px;
+  font-weight: 700;
+}
+.achievement span {
+  color: #ccc;
 }
 
 /*
@@ -721,10 +726,10 @@ small {
 
 .contact > span svg {
   width: 20px;
-  margin-left: 20px;
-  margin-right: 5px;
+  margin-left: 30px;
+  margin-right: 3px;
   position: relative;
-  top: 7px;
+  top: 2px;
 }
 
 .contact > span svg > path:last-child {
