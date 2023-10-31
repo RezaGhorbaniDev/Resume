@@ -1,54 +1,146 @@
-﻿html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+﻿@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
 body {
-    line-height: 1;
+  line-height: 1;
 }
 
-ol, ul {
-    list-style: none;
+ol,
+ul {
+  list-style: none;
 }
 
-blockquote, q {
-    quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-p{
-    margin-bottom:.5rem;
+p {
+  margin-bottom: 0.5rem;
 }
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+a:active {
+  color: inherit;
+}
+
 /*
     ==================================
     font faces
@@ -56,108 +148,105 @@ p{
 */
 
 @font-face {
-    font-family: "roboto";
-    font-style: normal;
-    font-weight: 300;
-    src: url("../fonts/Roboto_Light.woff2") format("woff2"),url("../fonts/Roboto_Light.woff") format("woff"),url("../fonts/Roboto_Light.ttf") format("truetype")
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Roboto_Light.woff2") format("woff2"),
+    url("../fonts/Roboto_Light.woff") format("woff"),
+    url("../fonts/Roboto_Light.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "roboto";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/Roboto_Regular.woff2") format("woff2"),url("../fonts/Roboto_Regular.woff") format("woff"),url("../fonts/Roboto_Regular.ttf") format("truetype")
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Roboto_Regular.woff2") format("woff2"),
+    url("../fonts/Roboto_Regular.woff") format("woff"),
+    url("../fonts/Roboto_Regular.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Ubuntu Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Ubuntu Regular'), url('../fonts/ubuntu/Ubuntu-R.woff') format('woff');
+  font-family: "Ubuntu Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Ubuntu Regular"), url("../fonts/ubuntu/Ubuntu-R.woff") format("woff");
 }
-
 
 @font-face {
-    font-family: 'Ubuntu Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Ubuntu Italic'), url('../fonts/ubuntu/Ubuntu-RI.woff') format('woff');
+  font-family: "Ubuntu Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Ubuntu Italic"), url("../fonts/ubuntu/Ubuntu-RI.woff") format("woff");
 }
-
 
 @font-face {
-    font-family: 'Ubuntu Light';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Ubuntu Light'), url('../fonts/ubuntu/Ubuntu-L.woff') format('woff');
+  font-family: "Ubuntu Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Ubuntu Light"), url("../fonts/ubuntu/Ubuntu-L.woff") format("woff");
 }
-
 
 @font-face {
-    font-family: 'Ubuntu Light Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Ubuntu Light Italic'), url('../fonts/ubuntu/Ubuntu-LI.woff') format('woff');
+  font-family: "Ubuntu Light Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Ubuntu Light Italic"), url("../fonts/ubuntu/Ubuntu-LI.woff") format("woff");
 }
-
 
 @font-face {
-    font-family: 'Ubuntu Medium';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Ubuntu Medium'), url('../fonts/ubuntu/Ubuntu-M.woff') format('woff');
+  font-family: "Ubuntu Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Ubuntu Medium"), url("../fonts/ubuntu/Ubuntu-M.woff") format("woff");
 }
-
 
 @font-face {
-    font-family: 'Ubuntu Medium Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Ubuntu Medium Italic'), url('../fonts/ubuntu/Ubuntu-MI.woff') format('woff');
+  font-family: "Ubuntu Medium Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Ubuntu Medium Italic"), url("../fonts/ubuntu/Ubuntu-MI.woff") format("woff");
 }
-
 
 @font-face {
-    font-family: 'Ubuntu Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Ubuntu Bold'), url('../fonts/ubuntu/Ubuntu-B.woff') format('woff');
+  font-family: "Ubuntu Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Ubuntu Bold"), url("../fonts/ubuntu/Ubuntu-B.woff") format("woff");
 }
-
 
 @font-face {
-    font-family: 'Ubuntu Bold Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Ubuntu Bold Italic'), url('../fonts/ubuntu/Ubuntu-BI.woff') format('woff');
+  font-family: "Ubuntu Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Ubuntu Bold Italic"), url("../fonts/ubuntu/Ubuntu-BI.woff") format("woff");
 }
-
 
 @font-face {
-    font-family: 'Ubuntu Condensed Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Ubuntu Condensed Regular'), url('../fonts/ubuntu/Ubuntu-C.woff') format('woff');
+  font-family: "Ubuntu Condensed Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Ubuntu Condensed Regular"), url("../fonts/ubuntu/Ubuntu-C.woff") format("woff");
 }
+
 /*
     ==================================
     common classes
     ==================================
 */
 .middle {
-    position: relative;
-    margin: 0 auto;
+  position: relative;
+  margin: 0 auto;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .c-grey {
-    color: #455A64;
+  color: #455a64;
 }
-.text-justify{
-    text-align:justify;
+.text-justify {
+  text-align: justify;
 }
 /*
     ==================================
@@ -165,19 +254,22 @@ p{
     ==================================
 */
 body {
-    font-family: roboto;
-    word-spacing: 1px;
-    line-height: 1.2rem;
+  font-family: roboto;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.75px;
+  line-height: 1.2rem;
+  background-color: #0a0a0a;
+  color: #fff;
 }
 
 .container {
-    margin-top: 1rem;
-    /*box-shadow: 0 1px 10px #333;*/
-    padding: 1rem;
+  /*box-shadow: 0 1px 10px #333;*/
+  padding: 1rem;
 }
 
 .a4 {
-    width: 21cm;
+  width: 21cm;
 }
 
 /*
@@ -186,98 +278,134 @@ body {
     ==================================
 */
 .hexagon-overlay {
-    margin-top: 40px;
-    width: 120px;
+  margin-top: 40px;
+  width: 120px;
+  display: block;
 }
 
 .hexagon-overlay .cover {
-    position: absolute;
-    left: -5%;
-    right: -5%;
-    top: -5%;
-    bottom: -5%;
-    z-index: 1;
-    background-image: url(../img/hexagon-white.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
+  position: absolute;
+  left: -5%;
+  right: -5%;
+  top: -5%;
+  bottom: -5%;
+  z-index: 1;
+  background-image: url(../img/hexagon-white.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .hexagon-overlay img {
-    width: 100%;
+  width: 100%;
 }
-
 
 /*
     ==================================
     other elements
     ==================================
 */
-h1, h2, h3, h4, h5, h6
- {
-    font-family: 'Ubuntu Bold', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
-.header, .ubuntu {
-    font-family: 'Ubuntu Regular', sans-serif;
+.header,
+.ubuntu {
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 h1 {
-    font-size: 2em;
+  font-size: 2em;
+  line-height: 1.5;
 }
 
 h2 {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 h3 {
-    font-size: 1.17em;
+  font-size: 1.17em;
 }
 
 h4 {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 h5 {
-    font-size: .83em;
+  font-size: 0.83em;
 }
 
-h5 {
-    font-size: .67em;
+h6 {
+  font-size: 0.67em;
+}
+
+h1 strong,
+h2 strong {
+  color: #fbcc1f;
+  font-weight: 900;
+}
+
+h1 i {
+  font-size: 100px;
+  line-height: 20px;
+  font-family: serif;
+}
+
+h2 {
+  position: relative;
+}
+
+h2:after {
+  background: url(/img/i-love-programming.png) no-repeat;
+  background-size: contain;
+  background-position: top center;
+  content: "";
+  position: absolute;
+  top: 0;
+  inset-inline-start: 0;
+  z-index: -10;
+  height: 4.5rem;
+  width: 100%;
+  opacity: 0.2;
 }
 
 small {
-    font-size: smaller;
+  font-size: smaller;
 }
 
 .fullname {
-    line-height: 3rem;
+  line-height: 3rem;
 }
 
 .speciallity {
-    font-size: .9em;
+  font-size: 0.9em;
 }
 
 .contact {
-    font-size: .8rem;
-    margin-top: 30px;
-    font-weight: bold;
-    position: relative;
-    padding: 20px 0;
+  font-size: 0.8rem;
+  margin-top: 30px;
+  font-weight: bold;
+  position: relative;
+  padding: 20px 0;
 }
 
 .contact > span svg {
-    width: 20px;
-    margin-left: 20px;
-    margin-right: 5px;
-    position: relative;
-    top: 7px;
+  width: 20px;
+  margin-left: 20px;
+  margin-right: 5px;
+  position: relative;
+  top: 7px;
 }
 
 .contact > span svg > path:last-child {
-    fill: #263238;
+  fill: #1c1c1c;
 }
 
 .contact > span:first-child svg {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .contact a,
@@ -288,41 +416,41 @@ small {
 .work a:hover,
 .work a:visited,
 .work a:active {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .contact:before,
 .contact:after {
-    content: '';
-    position: absolute;
-    width: 18%;
-    height: 3px;
-    background: #263238;
-    top: 0;
-    border-radius: 2px;
+  content: "";
+  position: absolute;
+  width: 18%;
+  height: 3px;
+  background: #1c1c1c;
+  top: 0;
+  border-radius: 2px;
 }
 
 .contact:before {
-    left: 27.5%
+  left: 27.5%;
 }
 
 .contact:after {
-    right: 27.5%;
+  right: 27.5%;
 }
 
 .contact .heart {
-    width: 30px;
-    height: 30px;
-    left: 0;
-    margin: 0 auto;
-    position: absolute;
-    right: 0;
-    top: -14px;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: -14px;
 }
 
 .contact .heart > g {
-    fill: #263238;
+  fill: #1c1c1c;
 }
 /*
     ==================================
@@ -330,43 +458,42 @@ small {
     ==================================
 */
 .time-line {
-    position: relative;
-    margin-top: 40px;
+  position: relative;
+  margin-top: 80px;
 }
 
 .line {
-    position: absolute;
-    top: 0;
-    /*border-left: 4px dashed #263238;*/
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 4px;
-    background-color: #263238;
-    border-radius: 2px;
+  position: absolute;
+  top: 0;
+  /*border-left: 4px dashed #1c1c1c;*/
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 4px;
+  background-color: #1c1c1c;
+  border-radius: 2px;
 }
 
-
 .content {
-    width: 50%;
+  width: 50%;
 }
 
 .content-left {
-    float: left;
-    direction: rtl;
-    text-align: right;
+  float: left;
+  direction: rtl;
+  text-align: right;
 }
 
 .content-right {
-    float: right;
+  float: right;
 }
 
 .clearfix::after {
-    content: " ";
-    display: block;
-    height: 0;
-    clear: both;
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 /*
@@ -375,34 +502,34 @@ small {
     ==================================
 */
 .time-line .section > .hexagon {
-    width: 25px;
-    height: 25px;
-    position: relative;
-    left: -12.5px;
-    top: 4.5px;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  left: -12.5px;
+  top: 4.5px;
 }
 
 .time-line .content-left .section > .hexagon {
-    left: 12.5px;
+  left: 12.5px;
 }
 
 .time-line .section > .hexagon:after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 50px;
-    background: #fff;
-    top: -12.5px;
-    left: 2.5px;
-    z-index: 1;
-    border-radius: 50%;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 50px;
+  background: #0a0a0a;
+  top: -12.5px;
+  left: 2.5px;
+  z-index: 1;
+  border-radius: 50%;
 }
 
 .time-line .section > .hexagon svg {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
 }
 /*
     ==================================
@@ -410,92 +537,95 @@ small {
     ==================================
 */
 .section {
-    position: relative;
-    margin-bottom: 70px;
+  position: relative;
+  margin-bottom: 50px;
 }
 
 .content-left .section:first-child {
-    margin-top: 70px;
+  margin-top: 70px;
 }
 
 .header {
-    background-color: #263238;
-    position: absolute;
-    color: #FAFAFA;
-    top: 0;
-    line-height: 34px;
+  background-color: #1c1c1c;
+  position: absolute;
+  color: #fafafa;
+  top: 0;
+  line-height: 34px;
+  font-weight: 700;
 }
 
 .content-left .header {
-    right: 50px;
-    border-radius: 5px 0 0 5px;
-    padding: 0 14px 0 16px;
+  right: 50px;
+  border-radius: 5px 0 0 5px;
+  padding: 0 14px 0 16px;
 }
 
 .content-right .header {
-    left: 50px;
-    border-radius: 0 5px 5px 0;
-    padding: 0 16px 0 14px;
+  left: 50px;
+  border-radius: 0 5px 5px 0;
+  padding: 0 16px 0 14px;
 }
 
 .content-left .header:before,
 .content-right .header:before {
-    content: '';
-    position: absolute;
-    background-color: #263238;
-    width: 24px;
-    height: 24px;
-    top: -0px;
-    transform: rotate(45deg);
-    transform-origin: 0 0;
-    border-radius: 0 5px;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  background-color: #1c1c1c;
+  width: 24px;
+  height: 24px;
+  top: -0px;
+  transform: rotate(45deg);
+  transform-origin: 0 0;
+  border-radius: 0 5px;
+  z-index: -1;
 }
 
 .content-left .header:before {
-    right: -24px;
+  right: -24px;
 }
 
 .content-right .header:before {
-    left: 0;
+  left: 0;
 }
 
 .body {
-    padding: 40px 0 0 50px;
+  padding: 30px 0 0 50px;
 }
 
 .content-left .body {
-    padding: 40px 50px 0 0;
+  padding: 30px 50px 0 0;
 }
 
 .work h4 {
-    line-height: 25px;
+  line-height: 25px;
+  font-weight: 700;
 }
 
 .work i {
-    font-size: .8rem;
-    font-style: italic;
+  font-size: 0.8rem;
 }
 
 .work i:last-child {
-    float: right;
+  float: right;
 }
 
 .work ul {
-    margin: 10px 0 30px;
-    font-size: .8rem;
-    padding-left: 15px;
+  margin: 10px 0 30px;
+  font-size: 0.8rem;
+  padding-left: 15px;
 }
-
+.work ul li {
+  text-align: start;
+}
 .work ul li::before {
-    content: "\2022";
-    font-weight: bold;
-    font-size: 1.5rem;
-    display: inline-block;
-    width: .8em;
-    position: relative;
-    margin-left: -.6em;
-    top: 4px;
+  content: "\2022";
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: inline-block;
+  width: 0.8em;
+  position: relative;
+  margin-left: -0.6em;
+  top: 4px;
 }
 /*
     ==================================
@@ -503,35 +633,36 @@ small {
     ==================================
 */
 .skills {
-    list-style: none;
+  list-style: none;
 }
 
 .skills li.space {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .skills li > span {
-    font-size: .9rem;
-    margin-right: 20px;
-    top: -3px;
-    position: relative;
-    line-height: 23px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-right: 10px;
+  top: -3px;
+  position: relative;
+  line-height: 23px;
 }
 
 .skills .hexagon {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-left: 5px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
 }
 
 .skills .hexagon svg {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .skills .hexagon.b-lightgrey svg path {
-    fill: #B0BEC5 !important;
+  fill: rgba(204, 204, 204, 0.2) !important;
 }
 
 /*
@@ -540,38 +671,38 @@ small {
     ==================================
 */
 .achievement {
-    clear: both;
-    margin-bottom: 35px;
+  clear: both;
+  margin-bottom: 35px;
 }
 
 .achievement svg {
-    width: 45px;
-    height: 45px;
+  width: 45px;
+  height: 45px;
 }
 
 .achievement svg,
 .achievement img {
-    float: right;
-    margin-left: 20px;
+  float: right;
+  margin-left: 20px;
 }
 
 .content-right .achievement svg,
 .content-right .achievement img {
-    float: left;
-    margin-right: 20px;
-    margin-left: 0;
+  float: left;
+  margin-right: 20px;
+  margin-left: 0;
 }
 
 .achievement img {
-    width: 45px;
+  width: 45px;
 }
 
 .achievement svg path {
-    fill: #78909C
+  fill: #78909c;
 }
 
 .achievement h4 {
-    margin-bottom: 6px;
+  margin-bottom: 6px;
 }
 
 /*
@@ -580,69 +711,69 @@ small {
     ==================================
 */
 .contact {
-    font-size: .8rem;
-    letter-spacing: 1px;
-    margin-top: 30px;
-    font-weight: bold;
-    position: relative;
-    padding: 20px 0;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  font-weight: bold;
+  position: relative;
+  padding: 20px 0;
 }
 
 .contact > span svg {
-    width: 20px;
-    margin-left: 20px;
-    margin-right: 5px;
-    position: relative;
-    top: 7px;
+  width: 20px;
+  margin-left: 20px;
+  margin-right: 5px;
+  position: relative;
+  top: 7px;
 }
 
 .contact > span svg > path:last-child {
-    fill: #263238;
+  fill: #1c1c1c;
 }
 
 .contact > span:first-child svg {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .contact a,
 .contact a:hover,
 .contact a:visited,
 .contact a:active {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .contact:before,
 .contact:after {
-    content: '';
-    position: absolute;
-    width: 18%;
-    height: 3px;
-    background: #263238;
-    top: 0;
-    border-radius: 2px;
+  content: "";
+  position: absolute;
+  width: 18%;
+  height: 3px;
+  background: #1c1c1c;
+  top: 0;
+  border-radius: 2px;
 }
 
 .contact:before {
-    left: 27.5%
+  left: 27.5%;
 }
 
 .contact:after {
-    right: 27.5%;
+  right: 27.5%;
 }
 
 .contact .heart {
-    width: 30px;
-    height: 30px;
-    left: 0;
-    margin: 0 auto;
-    position: absolute;
-    right: 0;
-    top: -14px;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: -14px;
 }
 
 .contact .heart > g {
-    fill: #263238;
+  fill: #1c1c1c;
 }
 /*
     ==================================
@@ -652,21 +783,21 @@ small {
 .container.orange .fullname,
 .container.orange .work ul li::before,
 .container.orange .work i {
-    color: #FF5722
+  color: #ff5722;
 }
 
 .container.orange .hexagon:before {
-    border-bottom-color: #FF5722;
+  border-bottom-color: #ff5722;
 }
 
 .container.orange .hexagon:after {
-    border-top-color: #FF5722;
+  border-top-color: #ff5722;
 }
 
 .container.orange .section > .hexagon path,
 .container.orange .contact .heart > g,
 .container.orange .contact > span svg > path:last-child {
-    fill: #FF5722
+  fill: #ff5722;
 }
 /*
     ==================================
@@ -676,21 +807,21 @@ small {
 .container.cyan .fullname,
 .container.cyan .work ul li::before,
 .container.cyan .work i {
-    color: #00BCD4
+  color: #fbcc1f;
 }
 
 .container.cyan .hexagon:before {
-    border-bottom-color: #00BCD4;
+  border-bottom-color: #fbcc1f;
 }
 
 .container.cyan .hexagon:after {
-    border-top-color: #00BCD4;
+  border-top-color: #fbcc1f;
 }
 
 .container.cyan .section > .hexagon path,
 .container.cyan .contact .heart > g,
 .container.cyan .contact > span svg > path:last-child {
-    fill: #00BCD4
+  fill: #fbcc1f;
 }
 /*
     ==================================
@@ -700,21 +831,21 @@ small {
 .container.blue .fullname,
 .container.blue .work ul li::before,
 .container.blue .work i {
-    color: #03A9F4
+  color: #03a9f4;
 }
 
 .container.blue .hexagon:before {
-    border-bottom-color: #03A9F4;
+  border-bottom-color: #03a9f4;
 }
 
 .container.blue .hexagon:after {
-    border-top-color: #03A9F4;
+  border-top-color: #03a9f4;
 }
 
 .container.blue .section > .hexagon path,
 .container.blue .contact .heart > g,
 .container.blue .contact > span svg > path:last-child {
-    fill: #03A9F4
+  fill: #03a9f4;
 }
 /*
     ==================================
@@ -724,21 +855,21 @@ small {
 .container.green .fullname,
 .container.green .work ul li::before,
 .container.green .work i {
-    color: #4CAF50
+  color: #4caf50;
 }
 
 .container.green .hexagon:before {
-    border-bottom-color: #4CAF50;
+  border-bottom-color: #4caf50;
 }
 
 .container.green .hexagon:after {
-    border-top-color: #4CAF50;
+  border-top-color: #4caf50;
 }
 
 .container.green .section > .hexagon path,
 .container.green .contact .heart > g,
 .container.green .contact > span svg > path:last-child {
-    fill: #4CAF50
+  fill: #4caf50;
 }
 /*
     ==================================
@@ -748,21 +879,21 @@ small {
 .container.red .fullname,
 .container.red .work ul li::before,
 .container.red .work i {
-    color: #f44336
+  color: #f44336;
 }
 
 .container.red .hexagon:before {
-    border-bottom-color: #f44336;
+  border-bottom-color: #f44336;
 }
 
 .container.red .hexagon:after {
-    border-top-color: #f44336;
+  border-top-color: #f44336;
 }
 
 .container.red .section > .hexagon path,
 .container.red .contact .heart > g,
 .container.red .contact > span svg > path:last-child {
-    fill: #f44336
+  fill: #f44336;
 }
 /*
     ==================================
@@ -772,19 +903,19 @@ small {
 .container.pink .fullname,
 .container.pink .work ul li::before,
 .container.pink .work i {
-    color: #E91E63
+  color: #e91e63;
 }
 
 .container.pink .hexagon:before {
-    border-bottom-color: #E91E63;
+  border-bottom-color: #e91e63;
 }
 
 .container.pink .hexagon:after {
-    border-top-color: #E91E63;
+  border-top-color: #e91e63;
 }
 
 .container.pink .section > .hexagon path,
 .container.pink .contact .heart > g,
 .container.pink .contact > span svg > path:last-child {
-    fill: #E91E63
+  fill: #e91e63;
 }
