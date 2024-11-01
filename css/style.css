@@ -1,232 +1,6 @@
-﻿@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-p {
-  margin-bottom: 0.5rem;
-}
-
-a {
-  text-decoration: inherit;
-  color: inherit;
-}
-a:active {
-  color: inherit;
-}
-
-/*
-    ==================================
-    font faces
-    ==================================
-*/
-
-@font-face {
-  font-family: "roboto";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/Roboto_Light.woff2") format("woff2"),
-    url("../fonts/Roboto_Light.woff") format("woff"),
-    url("../fonts/Roboto_Light.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/Roboto_Regular.woff2") format("woff2"),
-    url("../fonts/Roboto_Regular.woff") format("woff"),
-    url("../fonts/Roboto_Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Ubuntu Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Ubuntu Regular"), url("../fonts/ubuntu/Ubuntu-R.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Ubuntu Italic";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Ubuntu Italic"), url("../fonts/ubuntu/Ubuntu-RI.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Ubuntu Light";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Ubuntu Light"), url("../fonts/ubuntu/Ubuntu-L.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Ubuntu Light Italic";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Ubuntu Light Italic"), url("../fonts/ubuntu/Ubuntu-LI.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Ubuntu Medium";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Ubuntu Medium"), url("../fonts/ubuntu/Ubuntu-M.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Ubuntu Medium Italic";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Ubuntu Medium Italic"), url("../fonts/ubuntu/Ubuntu-MI.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Ubuntu Bold";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Ubuntu Bold"), url("../fonts/ubuntu/Ubuntu-B.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Ubuntu Bold Italic";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Ubuntu Bold Italic"), url("../fonts/ubuntu/Ubuntu-BI.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Ubuntu Condensed Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Ubuntu Condensed Regular"), url("../fonts/ubuntu/Ubuntu-C.woff") format("woff");
-}
+﻿@import url("variables.css");
+@import url("reset.css");
+@import url("fonts.css");
 
 /*
     ==================================
@@ -254,13 +28,13 @@ a:active {
     ==================================
 */
 body {
-  font-family: roboto;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0.75px;
-  line-height: 1.2rem;
-  background-color: #0a0a0a;
-  color: #fff;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  letter-spacing: var(--letter-spacing);
+  line-height: var(--line-height);
+  background-color: var(--bg-color);
+  color: var(--color);
 }
 
 .container {
@@ -309,42 +83,40 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: "Plus Jakarta Sans", sans-serif;
-}
+h6,
 .header,
 .ubuntu {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: var(--header-font-family)
 }
 
 h1 {
-  font-size: 2em;
+  font-size: var(--h1-font-size);
   line-height: 1.5;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: var(--h2-font-size);
 }
 
 h3 {
-  font-size: 1.17em;
+  font-size: var(--h3-font-size);
 }
 
 h4 {
-  font-size: 1em;
+  font-size: var(--h4-font-size);
 }
 
 h5 {
-  font-size: 0.83em;
+  font-size: var(--h5-font-size);
 }
 
 h6 {
-  font-size: 0.67em;
+  font-size: var(--h6-font-size);
 }
 
 h1 strong,
 h2 strong {
-  color: #fbcc1f;
+  color: var(--primary);
   font-weight: 900;
 }
 
@@ -401,7 +173,7 @@ small {
 }
 
 .contact > span svg > path:last-child {
-  fill: #1c1c1c;
+  fill: var(--secondary);
 }
 
 .contact > span:first-child svg {
@@ -426,7 +198,7 @@ small {
   position: absolute;
   width: 18%;
   height: 3px;
-  background: #1c1c1c;
+  background: var(--secondary);
   top: 0;
   border-radius: 2px;
 }
@@ -450,7 +222,7 @@ small {
 }
 
 .contact .heart > g {
-  fill: #1c1c1c;
+  fill: var(--secondary);
 }
 /*
     ==================================
@@ -465,13 +237,13 @@ small {
 .line {
   position: absolute;
   top: 0;
-  /*border-left: 4px dashed #1c1c1c;*/
+  /*border-left: 4px dashed var(--secondary);*/
   margin: 0 auto;
   left: 0;
   right: 0;
   height: 100%;
   width: 4px;
-  background-color: #1c1c1c;
+  background-color: var(--secondary);
   border-radius: 2px;
 }
 
@@ -546,7 +318,7 @@ small {
 }
 
 .header {
-  background-color: #1c1c1c;
+  background-color: var(--secondary);
   position: absolute;
   color: #fafafa;
   top: 0;
@@ -570,7 +342,7 @@ small {
 .content-right .header:before {
   content: "";
   position: absolute;
-  background-color: #1c1c1c;
+  background-color: var(--secondary);
   width: 24px;
   height: 24px;
   top: -0px;
@@ -733,7 +505,7 @@ small {
 }
 
 .contact > span svg > path:last-child {
-  fill: #1c1c1c;
+  fill: var(--secondary);
 }
 
 .contact > span:first-child svg {
@@ -754,7 +526,7 @@ small {
   position: absolute;
   width: 18%;
   height: 3px;
-  background: #1c1c1c;
+  background: var(--secondary);
   top: 0;
   border-radius: 2px;
 }
@@ -778,7 +550,7 @@ small {
 }
 
 .contact .heart > g {
-  fill: #1c1c1c;
+  fill: var(--secondary);
 }
 /*
     ==================================
@@ -812,21 +584,21 @@ small {
 .container.cyan .fullname,
 .container.cyan .work ul li::before,
 .container.cyan .work i {
-  color: #fbcc1f;
+  color: var(--primary);
 }
 
 .container.cyan .hexagon:before {
-  border-bottom-color: #fbcc1f;
+  border-bottom-color: var(--primary);
 }
 
 .container.cyan .hexagon:after {
-  border-top-color: #fbcc1f;
+  border-top-color: var(--primary);
 }
 
 .container.cyan .section > .hexagon path,
 .container.cyan .contact .heart > g,
 .container.cyan .contact > span svg > path:last-child {
-  fill: #fbcc1f;
+  fill: var(--primary);
 }
 /*
     ==================================
