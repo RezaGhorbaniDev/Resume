@@ -1,20 +1,42 @@
 :root {
-  --bg-color: #0a0a0a;
-  --font-family: roboto;
-  --font-size: 14px;
-  --font-weight: 400;
-  --letter-spacing: 0.75px;
-  --line-height: 1.2rem;
-  --color: #fff;
+  --bg-color: #f4fdff;
+  --font-family: "Montserrat", serif;
+  --font-size: 13px;
+  --font-weight: 500;
+  --letter-spacing: 0;
+  --line-height: 1.5;
+  --color: #161616;
 
-  --header-font-family: "Plus Jakarta Sans", sans-serif;
-  --h1-font-size: 2em;
-  --h2-font-size: 1.5em;
-  --h3-font-size: 1.17em;
-  --h4-font-size: 1em;
-  --h5-font-size: 0.83em;
-  --h6-font-size: 0.67em;
+  --header-font-family: "Montserrat", serif;
+  --h1-font-size: 40pt;
+  --h1-line-height: normal;
+  --h3-font-size: 18pt;
+  --h3-line-height: normal;
+  --h4-font-size: calc(var(--font-size) + 1pt);
+  --h4-line-height: normal;
+  --h5-font-size: calc(var(--font-size) + 0.5pt);
+  --h5-line-height: normal;
 
-  --primary: #fbcc1f;
-  --secondary:#1c1c1c;
+  --primary: #e6af2e;
+  --secondary: #666467;
+
+  --split-percent: 42.6%;
+
+  --a4-y-padding: 3rem;
+
+  --gap: 1.75rem;
+
+  --bar-width: 2px;
+  --bar-radius: 2px;
+
+  --hex-width: 6px;
+
+  /* bio */
+  --bio-padding: calc(var(--split-percent) + var(--gap));
+  --bio-hex-width: 35px;
+  --bio-hex-height: calc(var(--bio-hex-width) * 1.125);
+
+  /* social */
+  --social-hex-width: calc(var(--gap) * 1.25);
+  --social-hex-height: calc(var(--social-hex-width) * 1.125);
 }
